@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let item of list" style="display: flex; justify-content: space-between;">
+      <span>* {{item.text}}</span>
+      <div>
+        <button (click)="toggle(item)">toggle</button>
+        <button (click)="delete(item)">delete</button>
+      </div>
+    </li>
+  </ul>
